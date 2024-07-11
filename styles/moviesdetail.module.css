@@ -1,0 +1,99 @@
+/* styles/MoviesDetail.module.css */
+
+.detailPage {
+    position: relative;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.9) 100%); */
+    z-index: 1;
+  }
+  
+  .content {
+    display: flex; 
+    align-items: flex-start; 
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; 
+  }
+  
+  .movieInfo {
+    flex: 1; 
+    padding-left: 2rem;
+  }
+  
+  .movieHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .movieTitle {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .movieInfo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: -10px; 
+  }
+  
+  .movieInfo p {
+    margin-left: 0.9rem; 
+  }
+  
+  .movieInfo strong {
+    color: #1e90ff;
+  }
+  
+  .movieSummary {
+    line-height: 1.6;
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+  
+  .playButton {
+    display: inline-block;
+    padding: 10px 30px; /* Atur padding untuk mengontrol tinggi dan lebar tombol */
+    font-size: 1rem; /* Ukuran font yang lebih kecil */
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Tombol hanya seukuran kontennya */
+  }
+  
+  .playButton:hover {
+    background-color: #f40612;
+  }
+  
